@@ -1,12 +1,12 @@
 export const COMPANY_CONFIG = {
   COMPANY_NAME: "Softora",
   EMAIL: "support@softora.site",
-  PHONE: "+1 (555) 123-4567",
+  PHONE: "+1 (833) 225-1707",
   ADDRESS: "123 Innovation Drive, Tech Valley, CA 94025",
   SOCIAL: {
-    linkedin: "https://linkedin.com/company/nextech-solutions",
-    twitter: "https://twitter.com/nextech_dev",
-    github: "https://github.com/nextech-solutions",
+    linkedin: "https://linkedin.com/company/softora-solutions",
+    twitter: "https://twitter.com/softorah_dev",
+    github: "https://github.com/softora-solutions",
   },
   DESCRIPTION:
     "Premium IT software company specializing in custom development, web & mobile apps, AI/ML solutions, and digital transformation.",
