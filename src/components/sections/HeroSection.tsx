@@ -1,4 +1,5 @@
-{/* Content */}
+export const HeroSection = () => {
+  {/* Content */}
 <div className="relative z-20 container-padding text-center">
   <div className="max-w-4xl mx-auto animate-fade-in">
 
