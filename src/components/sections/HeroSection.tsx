@@ -32,7 +32,7 @@ export const HeroSection = () => {
 
           {/* NEW APPLE SUPPORT STYLE */}
           <h1 
-            className="text-4xl md:text-6xl font-semibold mb-4"
+            className="text-4xl text-gray-700 md:text-6xl font-semibold mb-4"
             style={{ letterSpacing: "-0.02em" }}
           >
             Apple Support
