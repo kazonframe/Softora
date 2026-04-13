@@ -187,7 +187,7 @@ export const HeroSection = () => {
             padding: "32px",
             borderRadius: "22px",
             border: "1px solid #e5e5e7",
-            margin-bottom: "1000px"
+            marginBottom: "1000px"
           }}
         >
           <UserCircle2 size={40} style={{ marginBottom: "10px", color: "#6e6e73" }} />
