@@ -1,5 +1,3 @@
-
-
 import { ArrowRight, Play, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -13,67 +11,102 @@ export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="video-background"
-      >
+      <video autoPlay muted loop playsInline className="video-background">
         <source src="https://cdn.pixabay.com/video/2019/04/01/22646-325240142_large.mp4" type="video/mp4" />
       </video>
 
-      {/* Enhanced Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/90 z-10" />
-      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 via-transparent to-purple-900/20 z-10" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-white/95 z-10" />
 
       {/* Content */}
       <div className="relative z-20 container-padding text-center">
-        <div className="max-w-5xl mx-auto animate-fade-in">
+        <div className="max-w-4xl mx-auto">
+
+          {/* OLD HERO TEXT */}
+          {/*
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
             Building the
-            <span className="block gradient-text animate-gradient bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-clip-text text-transparent">
-              Future of Tech
-            </span>
+            <span className="block gradient-text">Future of Tech</span>
           </h1>
-          
-          {/* Key Value Proposition */}
-          <div className="mb-8">
-            <p className="text-xl md:text-2xl font-semibold text-primary mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              🚀 Premium Software Solutions That Scale Your Business
+          */}
+
+          {/* NEW APPLE SUPPORT STYLE */}
+          <h1 
+            className="text-4xl md:text-6xl font-semibold mb-4"
+            style={{ letterSpacing: "-0.02em" }}
+          >
+            Apple Support
+          </h1>
+
+          <p 
+            className="text-xl md:text-2xl text-gray-700 mb-6"
+            style={{ fontWeight: 500 }}
+          >
+            Need help with your Apple device?
+          </p>
+
+          <p 
+            className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed"
+          >
+            If you’re facing any issues with iOS, macOS, Mac, iPhone, iPad, or your iCloud account, our certified Apple Support team is here to assist you.
+          </p>
+
+          {/* SERVICES LIST */}
+          <div 
+            className="text-left max-w-xl mx-auto mb-8 text-gray-700"
+            style={{ lineHeight: "1.8" }}
+          >
+            <p>We provide expert troubleshooting and solutions for:</p>
+            <ul style={{ marginTop: "10px", paddingLeft: "18px" }}>
+              <li>• iOS and macOS software problems</li>
+              <li>• Device performance and setup issues</li>
+              <li>• iCloud account access, sync, and recovery</li>
+              <li>• Apple ID verification and security concerns</li>
+            </ul>
+          </div>
+
+          {/* CALL SUPPORT HIGHLIGHT */}
+          <div 
+            className="mb-10"
+            style={{
+              background: "#f5f5f7",
+              padding: "20px",
+              borderRadius: "16px",
+              border: "1px solid #e5e5e7"
+            }}
+          >
+            <p className="text-lg font-medium mb-2">
+              Call our Apple Support Helpline today
             </p>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              We craft cutting-edge software solutions that transform businesses and drive innovation. 
-              From AI-powered applications to scalable cloud architectures.
+            <p className="text-gray-600 mb-3">
+              📞 Toll-Free Number: 1800-XXX-XXXX (Available 24/7)
+            </p>
+            <p className="text-sm text-gray-500">
+              Our dedicated support specialists are ready to help you get back to using your Apple devices smoothly and securely.
             </p>
           </div>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <Link to="/services">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                <Play className="mr-2 w-5 h-5" />
-                View Services
-              </Button>
-            </Link>
-            
-            <Button 
+          {/* CTA BUTTON */}
+          <div className="flex justify-center">
+            <Button
               onClick={handleCallNow}
               size="lg"
-              className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 border border-green-400/50 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-400/25"
+              style={{
+                background: "#0071e3",
+                color: "#fff",
+                padding: "14px 32px",
+                borderRadius: "999px",
+                fontSize: "16px",
+                fontWeight: "600"
+              }}
+              className="hover:opacity-90 transition"
             >
               <Phone className="mr-2 w-5 h-5" />
-              Call Now: {COMPANY_CONFIG.PHONE}
+              Call Support Now
             </Button>
           </div>
-        </div>
 
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-xl animate-float"></div>
-        <div className="absolute top-40 right-10 w-32 h-32 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-xl animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-20 left-1/4 w-16 h-16 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
+        </div>
       </div>
     </section>
   );
