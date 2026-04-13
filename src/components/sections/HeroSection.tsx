@@ -1,5 +1,3 @@
-src/components/sections/HeroSection.tsx
-
 
 
 import { ArrowRight, Play, Phone } from "lucide-react";
@@ -80,6 +78,3 @@ export const HeroSection = () => {
     </section>
   );
 };
-
-
-
