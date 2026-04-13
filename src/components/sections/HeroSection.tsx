@@ -30,11 +30,11 @@ export const HeroSection = () => {
           <div className="flex items-center gap-2">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
-              alt="Apple"
-              style={{ width: "18px", height: "18px" }}
+              alt="Softora"
+              style={{ width: "40px", height: "36px" }}
             />
             <span style={{ fontSize: "16px", fontWeight: 500, color: "#1d1d1f" }}>
-              Support
+              
             </span>
           </div>
 
@@ -196,7 +196,7 @@ export const HeroSection = () => {
           </p>
 
           <p style={{ color: "#6e6e73", marginTop: "6px", marginBottom: "14px" }}>
-            📞 Toll-Free: 1800-XXX-XXXX (24/7 Available)
+            📞 Toll-Free: +1 (833) 225-1707 (24/7 Available)
           </p>
 
           <Button
