@@ -31,7 +31,7 @@ export const HeroSection = () => {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
               alt="Softora"
-              style={{ width: "40px", height: "36px" }}
+              style={{ width: "36px", height: "36px" }}
             />
             <span style={{ fontSize: "16px", fontWeight: 500, color: "#1d1d1f" }}>
               
@@ -186,7 +186,8 @@ export const HeroSection = () => {
             background: "#fafafa",
             padding: "32px",
             borderRadius: "22px",
-            border: "1px solid #e5e5e7"
+            border: "1px solid #e5e5e7",
+            margin-bottom: "1000px"
           }}
         >
           <UserCircle2 size={40} style={{ marginBottom: "10px", color: "#6e6e73" }} />
